@@ -69,10 +69,6 @@
   .g-msg[data-state="error"]{color:var(--ink)}
   .g-msg[data-state="error"]::before{content:"↯ ";}
 
-  .g-note{
-    margin-top:clamp(48px,7vw,84px);padding-top:22px;
-    border-top:1px solid var(--line);color:var(--ink-3);max-width:60ch;
-  }
   @media (prefers-reduced-motion:reduce){*{transition-duration:.01ms!important}}
 </style>
 </head>
@@ -80,11 +76,11 @@
 
 <main id="gate">
   <img class="g-logo" src="__LOGO__" alt="EMIX">
-  <p class="mono g-eyebrow">Materiał wewnętrzny · dostęp na hasło</p>
+  <p class="mono g-eyebrow">Materiał wewnętrzny</p>
   <h1 class="g-title">Ten dokument jest zaszyfrowany.</h1>
   <p class="g-lede">
     Treść nie jest ukryta — jest zaszyfrowana (AES-256-GCM). Bez hasła nie da się jej
-    odczytać także z kodu źródłowego strony. Hasło otrzymaliście osobnym kanałem.
+    odczytać także z kodu źródłowego strony.
   </p>
 
   <form class="g-form" id="g-form" autocomplete="off">
@@ -97,9 +93,6 @@
     <p class="mono g-msg" id="g-msg" role="status" aria-live="polite"></p>
   </form>
 
-  <p class="mono g-note">
-    W razie problemów z dostępem: studio@21zmyslow.pl
-  </p>
 </main>
 
 <div id="app"></div>
